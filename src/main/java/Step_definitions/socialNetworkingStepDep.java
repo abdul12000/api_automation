@@ -100,6 +100,17 @@ public class socialNetworkingStepDep extends BaseSteps implements En {
             assertThat(responseForPostCommentCall.body().jsonPath().get("body"), is(body));
             assertNotNull(responseForPostCommentCall.body().jsonPath().get("id"));
         });
+        Given("^service is up and running A$", () -> {
+            // Write code here that turns the phrase above into concrete actions
+
+        });
+        When("^We create a new comment with the following details \"([^\"]*)\",\"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\",$", (String arg0, String arg1, String arg2, String arg3) -> {
+            // Write code here that turns the phrase above into concrete actions
+
+        });
+        Then("^We should get the correct \"([^\"]*)\",\"([^\"]*)\", \"([^\"]*)\" and \"([^\"]*)\", returned with status code of (\\d+)$", (String arg0, String arg1, String arg2, String arg3, Integer arg4) -> {
+
+        });
     }
 
 
