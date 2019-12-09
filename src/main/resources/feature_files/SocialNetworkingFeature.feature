@@ -44,4 +44,12 @@ Feature:
       | 10009  | this is my Test name | tesemail.com | this is my test body |
 
 
+  Scenario Outline: This is just a test scenario for Git tutorial
+    Given service is up and running A
+    When We create a new comment with the following details "<postId>","<name>", "<email>" and "<body>",
+    Then We should get the correct "<postId>","<name>", "<email>" and "<body>", returned with status code of 201
+    Examples:
+      | postId | name                 | email        | body                 |
+      | 10009  | this is my Test name | tesemail.com | this is my test body |
+
 
